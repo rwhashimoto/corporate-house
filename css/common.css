@@ -329,6 +329,22 @@ a {
   font-size: 1.4rem;
 }
 
+.l-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.l-header {
+  width: 15%;
+}
+
+.l-footer {
+  width: 100%;
+}
+
+.l-main {
+  width: 85%;
+}
 .l-main p {
   background-color: red;
 }
