@@ -1,3 +1,30 @@
 .l-header {
     width: 15%;
+    padding: 40px 45px;
+    &-logo {//.l-header-logo
+        width: 200px;
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+    &-items {//.l-header-items
+        margin: 38px 0 0;
+        list-style: none;
+    }
+    &-item {//.l-header-item
+        display: inline-block;
+        margin: 10px 0 0;
+        padding: 6px;
+        color: $sub-color;
+        text-decoration: none;
+        @include media-pc {
+            transition: all ease-in-out 0.3s;
+            &:hover {
+                background-color: $accent-color;
+            }
+        }
+
+    }
 }
