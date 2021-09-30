@@ -336,6 +336,34 @@ a {
 
 .l-header {
   width: 15%;
+  padding: 40px 45px;
+}
+.l-header-logo {
+  width: 200px;
+}
+.l-header-logo img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.l-header-items {
+  margin: 38px 0 0;
+  list-style: none;
+}
+.l-header-item {
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 6px;
+  color: #121212;
+  text-decoration: none;
+}
+@media screen and (min-width: 769px) {
+  .l-header-item {
+    transition: all ease-in-out 0.3s;
+  }
+  .l-header-item:hover {
+    background-color: #FFDD00;
+  }
 }
 
 .l-footer {
