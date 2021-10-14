@@ -1,3 +1,25 @@
 .l-footer {
-    width: 100%;
+    background-color: $sub-color;
+    &-items {
+        padding: 50px 0 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    &-item {
+        padding: 0 20px;
+        color: $main-color;
+        font-size: 1.4rem;
+        text-decoration: none;
+        border-right: 1px solid $main-color;
+        &:nth-of-type(1) {
+            background-color: red;
+        }
+    }
+    &-copyright {
+        padding: 60px 0 20px;
+        color: $main-color;
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
