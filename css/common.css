@@ -397,6 +397,7 @@ a {
   width: 240px;
 }
 .l-main .section-lead {
+  margin: 80px 0 0;
   color: #121212;
   font-size: 1.6rem;
 }
@@ -462,8 +463,109 @@ a {
 .l-main-feature {
   padding: 160px 0 0;
 }
+.l-main-feature .contents {
+  display: flex;
+  justify-content: space-between;
+}
+.l-main-feature .contents .content {
+  list-style: none;
+}
+.l-main-feature .contents .content .circle {
+  display: block;
+  width: 100%;
+  padding: 50% 0;
+  border: 1px solid black;
+  border-radius: 50%;
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
+  position: relative;
+}
+.l-main-feature .contents .content .text {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.l-main-feature .contents .content .text .ttl {
+  display: block;
+  font-size: 1.6rem;
+}
 .l-main-flow {
   padding: 120px 0 0;
+}
+.l-main-flow .content {
+  display: flex;
+  gap: 5%;
+  margin: 60px 0;
+}
+.l-main-flow .figure-items {
+  list-style: none;
+}
+.l-main-flow .figure-items .figure-item {
+  width: 200px;
+  height: 80px;
+  background-color: #414141;
+  margin-bottom: 60px;
+  position: relative;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #FFF;
+  line-height: 80px;
+}
+.l-main-flow .figure-items .figure-item::before {
+  content: "";
+  width: 200px;
+  height: 30px;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%);
+          clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  background-color: #414141;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  z-index: 1;
+}
+.l-main-flow .figure-items .figure-item::after {
+  content: "";
+  width: 50px;
+  height: 40px;
+  background-color: #FFDD00;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.l-main-flow .figure-items .figure-item:last-of-type::after {
+  content: none;
+}
+.l-main-flow .description-items .description-item {
+  list-style: none;
+  margin: 44px 0 0;
+}
+.l-main-flow .description-items .description-item:first-child {
+  margin: 0;
+}
+.l-main-flow .description-items .description-item .ttl {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.l-main-flow .description-items .description-item .ttl .num {
+  display: block;
+  margin: 0 10px 0 0;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #414141;
+  color: #FFF;
+  font-size: 1.6rem;
+  border-radius: 50%;
+}
+.l-main-flow .description-items .description-item .text {
+  margin: 0 0 0 45px;
+  padding: 10px 0 0;
+  font-size: 1.6rem;
+  border-top: 1px solid #121212;
 }
 .l-main-contact {
   padding: 146px 0 0;
