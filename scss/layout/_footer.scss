@@ -9,7 +9,6 @@
     }
     &-item {
         display: block;
-        padding: 0 20px;
         color: $main-color;
         font-size: 1.4rem;
         text-decoration: none;
@@ -18,11 +17,14 @@
             border: none;
         }
         a {
+            padding: 0 20px;
             color: $main-color;
             text-decoration: none;
-            transition: ease-in-out .3s;
-            &:hover {
-                color: $accent-color;
+            @include media-pc {
+                transition: all ease-in-out 0.3s;
+                &:hover {
+                    color: $accent-color;
+                }
             }
         }
     }

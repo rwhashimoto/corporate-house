@@ -123,6 +123,14 @@
                     font-size: 1.4rem;
                     text-decoration: none;
                     position: relative;
+                    @include media-pc {
+                        transition: all ease-in-out 0.2s;
+                        &:hover {
+                            background-color: $main-color;
+                            opacity: 0.6;
+                        }
+                    }
+
                 }
                 .text {
                     margin: 15px;
@@ -229,16 +237,21 @@
         }
         .content {
             display: block;
-            list-style: none;
             width: 30%;
             text-align: center;
-            border: 1px solid $sub-color;
             position: relative;
             .content-inner {
                 display: block;
                 padding: 50px 0;
                 text-decoration: none;
                 color: $sub-color;
+                outline: 1px solid $sub-color;
+                @include media-pc {
+                    transition: all ease-in-out 0.1s;
+                    &:hover {
+                        outline: 3px solid $sub-color;
+                    }
+                }
             }
             &::after {
                 content: "";
