@@ -4,34 +4,39 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>明るい　HOUSE</title>
+		<title>明るいHOUSE</title>
 		<meta name="description" content="Codestep 中級編：コーポレートサイト／固定サイドメニュー">
 		<link rel="icon" href="/favicon.ico">
 		<link rel="stylesheet" href="./css/common.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 	<body class="l-body">
 		<header class="l-header">
 			<h1 class="l-header-logo"><a href="/"><img src="/images/common/logo.svg" alt="明るい　HOUSE"></a></h1>
-			<nav>
-				<ul class="l-header-items">
-					<li><a href="DUMMY" class="l-header-item">私たちについて</a></li>
-					<li><a href="DUMMY" class="l-header-item">サービス</a></li>
-					<li><a href="DUMMY" class="l-header-item">商品情報</a></li>
-					<li><a href="DUMMY" class="l-header-item">展示会</a></li>
-					<li><a href="DUMMY" class="l-header-item">暮らしの日記</a></li>
-					<li><a href="DUMMY" class="l-header-item">会社概要</a></li>
-				</ul>
-			</nav>
-			<nav>
-				<ul class="l-header-items">
-					<li><a href="DUMMY" class="l-header-item">Twitter</a></li>
-					<li><a href="DUMMY" class="l-header-item">facebook</a></li>
-					<li><a href="DUMMY" class="l-header-item">instagram</a></li>
-				</ul>
-			</nav>
+			<div class="l-header-btn"><span class="line"></span></div>
+			<div class="l-header-navs">
+				<nav>
+					<ul class="l-header-items">
+						<li><a href="DUMMY" class="l-header-item">私たちについて</a></li>
+						<li><a href="DUMMY" class="l-header-item">サービス</a></li>
+						<li><a href="DUMMY" class="l-header-item">商品情報</a></li>
+						<li><a href="DUMMY" class="l-header-item">展示会</a></li>
+						<li><a href="DUMMY" class="l-header-item">暮らしの日記</a></li>
+						<li><a href="DUMMY" class="l-header-item">会社概要</a></li>
+					</ul>
+				</nav>
+				<nav>
+					<ul class="l-header-items">
+						<li><a href="DUMMY" class="l-header-item">Twitter</a></li>
+						<li><a href="DUMMY" class="l-header-item">facebook</a></li>
+						<li><a href="DUMMY" class="l-header-item">instagram</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<main class="l-main">
-			<figure class="l-main-mv"><img src="/images/mv.jpg" alt="mv"></figure>
+			<figure class="l-main-mv"><iframe width="560" height="315" src="https://www.youtube.com/embed/WCXMvNrFz6s?autoplay=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+			<div id="mv"></div>
 			<div class="bg-gradation">
 			<section class="l-main-project section-wrap">
 				<h2 class="section-ttl">建築事例を紹介</h2>
@@ -137,6 +142,8 @@
 			</nav>
 			<p class="l-footer-copyright"><small>&copy;2021 Akarui HOUSE All Rights Reserved.</small></p>
 		</footer>
+
 		<script type="text/javascript" src="js/app.js"></script>
 	</body>
+
 </html>
