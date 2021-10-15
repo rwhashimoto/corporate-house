@@ -436,15 +436,17 @@ a {
   font-size: 1.6rem;
 }
 .l-main .bg-gradation {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(to top, rgba(5, 0, 0, 0.8), rgba(255, 255, 255, 0));
 }
 .l-main .bg-normal {
   background-color: #FFF;
 }
 .l-main-mv {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: 600px;
+  height: 640px;
   z-index: -1;
 }
 .l-main-mv img {
@@ -456,6 +458,15 @@ a {
 }
 .l-main-project {
   padding: 80px 0 0;
+}
+.l-main-project .section-ttl {
+  color: #FFF;
+}
+.l-main-project .section-ttl::after {
+  background: #FFF;
+}
+.l-main-project .section-ttl:before {
+  background: #FFF;
 }
 .l-main-project .contents {
   margin: 60px 0 0;
@@ -469,6 +480,7 @@ a {
   list-style: none;
   width: 46%;
   padding-top: 30%;
+  border: 1px solid #FFF;
 }
 .l-main-project .content img {
   position: absolute;
@@ -513,6 +525,15 @@ a {
 .l-main-feature {
   padding: 160px 0;
 }
+.l-main-feature .section-ttl {
+  color: #FFF;
+}
+.l-main-feature .section-ttl::after {
+  background: #FFF;
+}
+.l-main-feature .section-ttl:before {
+  background: #FFF;
+}
 .l-main-feature .contents {
   display: flex;
   justify-content: space-between;
@@ -531,6 +552,7 @@ a {
   border-radius: 50%;
   color: #FFF;
   font-size: 1.4rem;
+  font-weight: bold;
   text-decoration: none;
   position: relative;
 }
@@ -540,7 +562,7 @@ a {
   }
   .l-main-feature .contents .content .circle:hover {
     background-color: #FFF;
-    opacity: 0.6;
+    opacity: 0.3;
   }
 }
 .l-main-feature .contents .content .text {
