@@ -434,7 +434,6 @@ a {
 }
 
 .l-main {
-  width: 100%;
   margin-left: 300px;
 }
 @media screen and (max-width: 768px) {
@@ -443,7 +442,7 @@ a {
   }
 }
 .l-main .section-wrap {
-  max-width: 860px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
