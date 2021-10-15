@@ -366,6 +366,7 @@ a {
 }
 
 .l-footer {
+  margin: 160px 0 0;
   background-color: #121212;
 }
 .l-footer-items {
@@ -375,14 +376,23 @@ a {
   justify-content: center;
 }
 .l-footer-item {
+  display: block;
   padding: 0 20px;
   color: #FFF;
   font-size: 1.4rem;
   text-decoration: none;
   border-right: 1px solid #FFF;
 }
-.l-footer-item:nth-of-type(1) {
-  background-color: red;
+.l-footer-item:last-of-type {
+  border: none;
+}
+.l-footer-item a {
+  color: #FFF;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+.l-footer-item a:hover {
+  color: #FFDD00;
 }
 .l-footer-copyright {
   padding: 60px 0 20px;
