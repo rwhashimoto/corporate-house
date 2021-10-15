@@ -1,11 +1,17 @@
 .l-footer {
     margin: 160px 0 0 300px;
     background-color: $sub-color;
+    @include media-sp {
+        margin: 120px 0 0 0;
+    }
     &-items {
         padding: 50px 0 0;
         list-style: none;
         display: flex;
         justify-content: center;
+        @include media-sp {
+            flex-wrap: wrap;
+        }
     }
     &-item {
         display: block;
@@ -33,5 +39,8 @@
         color: $main-color;
         font-size: 1.2rem;
         text-align: center;
+        @include media-sp {
+            padding: 70px 0 20px;
+        }
     }
 }

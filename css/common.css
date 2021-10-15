@@ -335,6 +335,16 @@ a {
   height: 100%;
   padding: 40px 45px;
 }
+@media screen and (max-width: 768px) {
+  .l-header {
+    width: 100%;
+    padding: 10px 18px;
+    height: 72px;
+    background-color: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+}
 .l-header-logo {
   width: 200px;
 }
@@ -346,6 +356,11 @@ a {
 .l-header-items {
   margin: 38px 0 0;
   list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .l-header-items {
+    display: none;
+  }
 }
 .l-header-item {
   display: inline-block;
@@ -367,11 +382,21 @@ a {
   margin: 160px 0 0 300px;
   background-color: #121212;
 }
+@media screen and (max-width: 768px) {
+  .l-footer {
+    margin: 120px 0 0 0;
+  }
+}
 .l-footer-items {
   padding: 50px 0 0;
   list-style: none;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .l-footer-items {
+    flex-wrap: wrap;
+  }
 }
 .l-footer-item {
   display: block;
@@ -402,9 +427,20 @@ a {
   font-size: 1.2rem;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .l-footer-copyright {
+    padding: 70px 0 20px;
+  }
+}
 
 .l-main {
+  width: 100%;
   margin-left: 300px;
+}
+@media screen and (max-width: 768px) {
+  .l-main {
+    margin-left: 0;
+  }
 }
 .l-main .section-wrap {
   max-width: 860px;
@@ -415,8 +451,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
+  font-weight: bold;
   color: #121212;
+}
+@media screen and (max-width: 768px) {
+  .l-main .section-ttl {
+    font-size: 2rem;
+  }
 }
 .l-main .section-ttl:before {
   content: "";
@@ -424,16 +466,31 @@ a {
   background: #121212;
   width: 240px;
 }
+@media screen and (max-width: 768px) {
+  .l-main .section-ttl:before {
+    width: 60px;
+  }
+}
 .l-main .section-ttl::after {
   content: "";
   height: 1px;
   background: #121212;
   width: 240px;
 }
+@media screen and (max-width: 768px) {
+  .l-main .section-ttl::after {
+    width: 60px;
+  }
+}
 .l-main .section-lead {
   margin: 80px 0 0;
   color: #121212;
   font-size: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  .l-main .section-lead {
+    margin: 30px 0 0;
+  }
 }
 .l-main .bg-gradation {
   background: linear-gradient(to top, rgba(5, 0, 0, 0.8), rgba(255, 255, 255, 0));
@@ -457,7 +514,7 @@ a {
      object-fit: cover;
 }
 .l-main-project {
-  padding: 80px 0 0;
+  padding: 80px 20px 0;
 }
 .l-main-project .section-ttl {
   color: #FFF;
@@ -475,12 +532,23 @@ a {
   justify-content: space-between;
   gap: 50px;
 }
+@media screen and (max-width: 768px) {
+  .l-main-project .contents {
+    gap: 30px;
+  }
+}
 .l-main-project .content {
   position: relative;
   list-style: none;
   width: 46%;
   padding-top: 30%;
   border: 1px solid #FFF;
+}
+@media screen and (max-width: 768px) {
+  .l-main-project .content {
+    width: 100%;
+    padding-top: 65%;
+  }
 }
 .l-main-project .content img {
   position: absolute;
@@ -523,7 +591,12 @@ a {
   font-size: 1.2rem;
 }
 .l-main-feature {
-  padding: 160px 0;
+  padding: 160px 20px;
+}
+@media screen and (max-width: 768px) {
+  .l-main-feature {
+    padding: 120px 20px;
+  }
 }
 .l-main-feature .section-ttl {
   color: #FFF;
@@ -565,11 +638,23 @@ a {
     opacity: 0.3;
   }
 }
+@media screen and (max-width: 768px) {
+  .l-main-feature .contents .content .circle {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
 .l-main-feature .contents .content .text {
   margin: 15px;
   color: #FFF;
   font-size: 1.4rem;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .l-main-feature .contents .content .text {
+    margin: 5px;
+  }
 }
 .l-main-feature .contents .content .text .ttl {
   display: block;
@@ -578,12 +663,23 @@ a {
   font-weight: bold;
 }
 .l-main-flow {
-  padding: 120px 0 0;
+  padding: 120px 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .l-main-flow {
+    padding: 60px 20px 0;
+  }
 }
 .l-main-flow .content {
   display: flex;
   gap: 5%;
   margin: 60px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .l-main-flow .content {
+    flex-direction: column;
+    margin: 30px 0 0;
+  }
 }
 .l-main-flow .figure-items {
   list-style: none;
@@ -599,6 +695,11 @@ a {
   color: #FFF;
   line-height: 80px;
 }
+@media screen and (max-width: 768px) {
+  .l-main-flow .figure-items .figure-item {
+    width: 100%;
+  }
+}
 .l-main-flow .figure-items .figure-item::before {
   content: "";
   width: 200px;
@@ -611,6 +712,11 @@ a {
   right: 0;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .l-main-flow .figure-items .figure-item::before {
+    width: 100%;
+  }
+}
 .l-main-flow .figure-items .figure-item::after {
   content: "";
   width: 50px;
@@ -622,6 +728,11 @@ a {
   right: 0;
   margin: auto;
 }
+@media screen and (max-width: 768px) {
+  .l-main-flow .figure-items .figure-item::after {
+    height: 35px;
+  }
+}
 .l-main-flow .figure-items .figure-item:last-of-type::after {
   content: none;
 }
@@ -629,8 +740,18 @@ a {
   list-style: none;
   margin: 44px 0 0;
 }
+@media screen and (max-width: 768px) {
+  .l-main-flow .description-items .description-item {
+    margin: 43px 0 0;
+  }
+}
 .l-main-flow .description-items .description-item:first-child {
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .l-main-flow .description-items .description-item:first-child {
+    margin: 20px 0 0;
+  }
 }
 .l-main-flow .description-items .description-item .ttl {
   font-size: 2rem;
@@ -656,7 +777,12 @@ a {
   border-top: 1px solid #121212;
 }
 .l-main-contact {
-  padding: 106px 0 0;
+  padding: 106px 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .l-main-contact {
+    padding: 120px 20px 0;
+  }
 }
 .l-main-contact .contents {
   display: flex;
@@ -665,11 +791,23 @@ a {
   list-style: none;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .l-main-contact .contents {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .l-main-contact .content {
   display: block;
   width: 30%;
   text-align: center;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .l-main-contact .content {
+    width: 70%;
+  }
 }
 .l-main-contact .content .content-inner {
   display: block;
