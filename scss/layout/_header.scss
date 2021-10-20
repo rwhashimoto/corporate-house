@@ -19,6 +19,7 @@
     }
     &-logo {//.l-header-logo
         display: block;
+        width: 200px;
         @include media-sp {
             width: 180px;
         }

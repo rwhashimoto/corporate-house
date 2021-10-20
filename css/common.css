@@ -353,6 +353,7 @@ a {
 }
 .l-header-logo {
   display: block;
+  width: 200px;
 }
 @media screen and (max-width: 768px) {
   .l-header-logo {
@@ -631,11 +632,9 @@ a {
   z-index: -1;
   width: 100%;
   /*横幅いっぱいにwidthを指定*/
-  padding-bottom: 56.25%;
-  /*高さをpaddingで指定(16:9)*/
   height: 0px;
   /*高さはpaddingで指定するためheightは0に*/
-  padding-bottom: 37.5%;
+  padding-bottom: 53.5%;
 }
 @media screen and (max-width: 768px) {
   .l-main-mv {

@@ -59,9 +59,9 @@
         // height: 640px;
         z-index: -1;
         width:100%;              /*横幅いっぱいにwidthを指定*/
-        padding-bottom: 56.25%;  /*高さをpaddingで指定(16:9)*/
+        // padding-bottom: 56.25%;  /*高さをpaddingで指定(16:9)*/
         height:0px;              /*高さはpaddingで指定するためheightは0に*/
-        padding-bottom: 37.5%;
+        padding-bottom: 53.5%;
         @include media-sp {
             padding-bottom: 160%
         }
