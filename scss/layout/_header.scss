@@ -35,32 +35,30 @@
             display: block;
             position: relative;
             width: 30px;
-            height: 20px;
+            height: 30px;
             &::before {
                 content: '';
                 display: block;
                 position: absolute;
-                top: 0;
+                top: 5px;
                 left: 0;
                 width: 30px;
                 height: 2px;
                 border-radius: 2px;
                 background-color: $sub-color;
                 transition: all ease-in-out 0.5s;
-                transform-origin: 0 0;
             }
             &::after {
                 content: '';
                 display: block;
                 position: absolute;
-                bottom: 0;
+                bottom: 5px;
                 left: 0;
                 width: 30px;
                 height: 2px;
                 border-radius: 2px;
                 background-color: $sub-color;
                 transition: all ease-in-out 0.5s;
-                transform-origin:0 100%;
             }
             .line {
                 display: block;
@@ -76,19 +74,17 @@
             }
             .active & {
                 &::before {
-                    width: 27px;
-                    left: 2px;
-                    transform: rotate(45deg);
-                    // transform: translateY(10px) rotate(-135deg);
-                    transform-origin: 0 0;
+                    width: 30px;
+                    // top: 5px;
+                    // left: 2px;
+                    transform: translateY(10px) rotate(405deg);
                     background-color: $main-color;
                 }
                 &::after {
-                    width: 27px;
-                    left: 2px;
-                    transform: rotate(-45deg);
-                    // transform: translateY(-10px) rotate(135deg);
-                    transform-origin: 0 100%;
+                    width: 30px;
+                    // left: 2px;
+                    // bottom: 5px;
+                    transform: translateY(-10px) rotate(-405deg);
                     background-color: $main-color;
                 }
                 .line {
