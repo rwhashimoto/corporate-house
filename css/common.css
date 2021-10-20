@@ -769,15 +769,21 @@ a {
   font-weight: bold;
   text-decoration: none;
   position: relative;
+  overflow: hidden;
 }
-@media screen and (min-width: 769px) {
-  .l-main-feature .contents .content .circle {
-    transition: all ease-in-out 0.2s;
-  }
-  .l-main-feature .contents .content .circle:hover {
-    background-color: #FFF;
-    opacity: 0.3;
-  }
+.l-main-feature .contents .content .circle::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: all ease-in-out 0.6s;
+  background-color: #fff;
+  opacity: 0.3;
+}
+.l-main-feature .contents .content .circle:hover::after {
+  left: 0;
 }
 @media screen and (max-width: 768px) {
   .l-main-feature .contents .content .circle {
@@ -962,7 +968,7 @@ a {
     transition: all ease-in-out 0.1s;
   }
   .l-main-contact .content .content-inner:hover {
-    outline: 3px solid #121212;
+    outline: 4px solid #121212;
   }
 }
 .l-main-contact .content::after {
