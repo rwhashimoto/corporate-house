@@ -502,7 +502,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-footer {
-    margin: 123px 0 0 0;
+    margin: 124px 0 0 0;
   }
 }
 .l-footer-items {
@@ -514,7 +514,7 @@ a {
 @media screen and (max-width: 768px) {
   .l-footer-items {
     flex-wrap: wrap;
-    padding: 40px 0 0;
+    padding: 36px 0 0;
   }
 }
 .l-footer-item {
@@ -653,6 +653,11 @@ a {
 }
 .l-main-project {
   padding: 80px 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .l-main-project {
+    padding: 57px 20px 0;
+  }
 }
 .l-main-project .section-ttl {
   color: #FFF;

@@ -3,7 +3,7 @@
     background-color: $sub-color;
     font-family: $font-family;
     @include media-sp {
-        margin: 123px 0 0 0;
+        margin: 124px 0 0 0;
     }
     &-items {
         list-style: none;
@@ -12,7 +12,7 @@
         padding: 50px 0 0;
         @include media-sp {
             flex-wrap: wrap;
-            padding: 40px 0 0;
+            padding: 36px 0 0;
         }
     }
     &-item {

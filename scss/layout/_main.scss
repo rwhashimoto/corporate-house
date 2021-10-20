@@ -76,6 +76,9 @@
     }
     &-project {//.l-main-project
         padding: 80px 20px 0;
+        @include media-sp {
+            padding: 57px 20px 0;
+        }
         .section-ttl {
             color: $main-color;
             &::after {
