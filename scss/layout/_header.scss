@@ -18,7 +18,7 @@
         position: fixed;
     }
     &-logo {//.l-header-logo
-        width: 200px;
+        display: block;
         @include media-sp {
             width: 180px;
         }
@@ -110,20 +110,24 @@
             .active & {
                 left: 0;
             }
-
         }
     }
     &-items {//.l-header-items
         margin: 38px 0 0;
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &.sns {//後で修正
+            margin: 80px 0 0;
+        }
         @include media-sp {
             margin: 0;
         }
     }
     &-item {//.l-header-item
         display: inline-block;
-        margin: 10px 0 0;
-        padding: 6px;
+        // margin: 10px 0 0;
         color: $sub-color;
         text-decoration: none;
         @include media-pc {

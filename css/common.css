@@ -352,7 +352,7 @@ a {
   }
 }
 .l-header-logo {
-  width: 200px;
+  display: block;
 }
 @media screen and (max-width: 768px) {
   .l-header-logo {
@@ -451,6 +451,12 @@ a {
 .l-header-items {
   margin: 38px 0 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.l-header-items.sns {
+  margin: 80px 0 0;
 }
 @media screen and (max-width: 768px) {
   .l-header-items {
@@ -459,8 +465,6 @@ a {
 }
 .l-header-item {
   display: inline-block;
-  margin: 10px 0 0;
-  padding: 6px;
   color: #121212;
   text-decoration: none;
 }
@@ -498,18 +502,19 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-footer {
-    margin: 120px 0 0 0;
+    margin: 123px 0 0 0;
   }
 }
 .l-footer-items {
-  padding: 50px 0 0;
   list-style: none;
   display: flex;
   justify-content: center;
+  padding: 50px 0 0;
 }
 @media screen and (max-width: 768px) {
   .l-footer-items {
     flex-wrap: wrap;
+    padding: 40px 0 0;
   }
 }
 .l-footer-item {
@@ -521,6 +526,11 @@ a {
 }
 .l-footer-item:last-of-type {
   border: none;
+}
+@media screen and (max-width: 768px) {
+  .l-footer-item {
+    margin-top: 10px;
+  }
 }
 .l-footer-item a {
   padding: 0 20px;
@@ -536,14 +546,16 @@ a {
   }
 }
 .l-footer-copyright {
-  padding: 60px 0 20px;
+  display: block;
+  padding: 60px 0 23px;
+  text-align: center;
   color: #FFF;
   font-size: 1.2rem;
-  text-align: center;
+  font-family: "メイリオ";
 }
 @media screen and (max-width: 768px) {
   .l-footer-copyright {
-    padding: 70px 0 20px;
+    padding: 75px 0 20px;
   }
 }
 
@@ -597,7 +609,7 @@ a {
   }
 }
 .l-main .section-lead {
-  margin: 80px 0 0;
+  margin: 60px 0 0;
   color: #121212;
   font-size: 1.6rem;
 }
@@ -623,18 +635,12 @@ a {
   /*高さをpaddingで指定(16:9)*/
   height: 0px;
   /*高さはpaddingで指定するためheightは0に*/
+  padding-bottom: 37.5%;
 }
 @media screen and (max-width: 768px) {
   .l-main-mv {
     padding-bottom: 160%;
   }
-}
-.l-main-mv img {
-  width: 100%;
-  height: 100%;
-  vertical-align: top;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .l-main-mv iframe {
   position: absolute;
@@ -642,6 +648,8 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .l-main-project {
   padding: 80px 20px 0;
@@ -656,7 +664,7 @@ a {
   background: #FFF;
 }
 .l-main-project .contents {
-  margin: 60px 0 0;
+  margin: 63px 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -664,20 +672,21 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-project .contents {
+    margin: 33px 0 0;
     gap: 30px;
   }
 }
 .l-main-project .content {
   position: relative;
   list-style: none;
-  width: 46%;
-  padding-top: 30%;
+  width: 46.5%;
+  padding-top: 29.5%;
   border: 1px solid #FFF;
 }
 @media screen and (max-width: 768px) {
   .l-main-project .content {
     width: 100%;
-    padding-top: 65%;
+    padding-top: 63%;
   }
 }
 .l-main-project .content::before {
@@ -691,39 +700,43 @@ a {
   z-index: 1;
 }
 .l-main-project .content:nth-of-type(1)::after {
-  content: "project_01";
+  content: "PROJECT_01";
   position: absolute;
-  bottom: 5px;
-  left: 5px;
+  bottom: 4px;
+  left: 6px;
   color: #FFF;
   font-size: 1.2rem;
+  font-family: "メイリオ";
   z-index: 2;
 }
 .l-main-project .content:nth-of-type(2)::after {
-  content: "project_02";
+  content: "PROJECT_02";
   position: absolute;
-  bottom: 5px;
-  left: 5px;
+  bottom: 4px;
+  left: 6px;
   color: #FFF;
   font-size: 1.2rem;
+  font-family: "メイリオ";
   z-index: 2;
 }
 .l-main-project .content:nth-of-type(3)::after {
-  content: "project_03";
+  content: "PROJECT_03";
   position: absolute;
-  bottom: 5px;
-  left: 5px;
+  bottom: 4px;
+  left: 6px;
   color: #FFF;
   font-size: 1.2rem;
+  font-family: "メイリオ";
   z-index: 2;
 }
 .l-main-project .content:nth-of-type(4)::after {
-  content: "project_04";
+  content: "PROJECT_04";
   position: absolute;
-  bottom: 5px;
-  left: 5px;
+  bottom: 4px;
+  left: 6px;
   color: #FFF;
   font-size: 1.2rem;
+  font-family: "メイリオ";
   z-index: 2;
 }
 .l-main-project .content img {
@@ -735,11 +748,11 @@ a {
      object-fit: cover;
 }
 .l-main-feature {
-  padding: 160px 20px;
+  padding: 160px 20px 145px;
 }
 @media screen and (max-width: 768px) {
   .l-main-feature {
-    padding: 120px 20px;
+    padding: 117px 20px 107px;
   }
 }
 .l-main-feature .section-ttl {
@@ -754,10 +767,20 @@ a {
 .l-main-feature .contents {
   display: flex;
   justify-content: space-between;
-  margin: 60px 0 0;
+  margin: 62px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .l-main-feature .contents {
+    margin: 33px 0 0;
+  }
 }
 .l-main-feature .contents .content {
   list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .l-main-feature .contents .content {
+    width: 100px;
+  }
 }
 .l-main-feature .contents .content .circle {
   display: block;
@@ -803,11 +826,12 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-feature .contents .content .text {
-    margin: 5px;
+    margin: 15px 0;
   }
 }
 .l-main-feature .contents .content .text .ttl {
   display: block;
+  margin-bottom: 7px;
   color: #FFF;
   font-size: 1.6rem;
   font-weight: bold;
@@ -817,18 +841,18 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-flow {
-    padding: 60px 20px 0;
+    padding: 58px 20px 0;
   }
 }
 .l-main-flow .content {
   display: flex;
-  gap: 5%;
-  margin: 60px 0 0;
+  gap: 4.5%;
+  margin: 62px 0 0;
 }
 @media screen and (max-width: 768px) {
   .l-main-flow .content {
     flex-direction: column;
-    margin: 30px 0 0;
+    margin: 33px 0 0;
   }
 }
 .l-main-flow .figure-items {
@@ -837,8 +861,8 @@ a {
 .l-main-flow .figure-items .figure-item {
   width: 200px;
   height: 80px;
+  margin: 0 0 60px;
   background-color: #414141;
-  margin-bottom: 60px;
   position: relative;
   text-align: center;
   font-size: 1.4rem;
@@ -847,7 +871,8 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-flow .figure-items .figure-item {
-    width: 100%;
+    width: 88%;
+    margin: 0 auto 60px;
   }
 }
 .l-main-flow .figure-items .figure-item::before {
@@ -888,11 +913,11 @@ a {
 }
 .l-main-flow .description-items .description-item {
   list-style: none;
-  margin: 44px 0 0;
+  margin: 46px 0 0;
 }
 @media screen and (max-width: 768px) {
   .l-main-flow .description-items .description-item {
-    margin: 43px 0 0;
+    margin: 45px 0 0;
   }
 }
 .l-main-flow .description-items .description-item:first-child {
@@ -906,11 +931,10 @@ a {
 .l-main-flow .description-items .description-item .ttl {
   font-size: 2rem;
   display: flex;
-  align-items: center;
 }
 .l-main-flow .description-items .description-item .ttl .num {
   display: block;
-  margin: 0 10px 0 0;
+  margin: 3px 8px 0px 3px;
   width: 35px;
   height: 35px;
   line-height: 35px;
@@ -920,14 +944,24 @@ a {
   font-size: 1.6rem;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  .l-main-flow .description-items .description-item .ttl .num {
+    margin: 3px 8px 0px 0px;
+  }
+}
 .l-main-flow .description-items .description-item .text {
   margin: 0 0 0 45px;
-  padding: 10px 0 0;
+  padding: 6px 0 0;
   font-size: 1.6rem;
   border-top: 1px solid #121212;
 }
+@media screen and (max-width: 768px) {
+  .l-main-flow .description-items .description-item .text {
+    padding: 6px 12px 0 0;
+  }
+}
 .l-main-contact {
-  padding: 106px 20px 0;
+  padding: 114px 20px 0;
 }
 @media screen and (max-width: 768px) {
   .l-main-contact {
@@ -937,7 +971,7 @@ a {
 .l-main-contact .contents {
   display: flex;
   justify-content: space-between;
-  margin: 60px 0 0;
+  margin: 65px 0 0;
   list-style: none;
   width: 100%;
 }
@@ -946,6 +980,7 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin: 35px 0 0;
   }
 }
 .l-main-contact .content {
@@ -956,7 +991,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-contact .content {
-    width: 70%;
+    width: 60%;
   }
 }
 .l-main-contact .content .content-inner {
@@ -977,7 +1012,7 @@ a {
 .l-main-contact .content::after {
   content: "";
   position: absolute;
-  bottom: 4px;
+  bottom: 3px;
   right: 4px;
   width: 0;
   height: 0;
