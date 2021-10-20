@@ -334,6 +334,7 @@ a {
   width: 300px;
   height: 100%;
   padding: 40px 45px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .l-header {
@@ -493,6 +494,7 @@ a {
 .l-footer {
   margin: 160px 0 0 300px;
   background-color: #121212;
+  font-family: "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .l-footer {
@@ -547,6 +549,7 @@ a {
 
 .l-main {
   margin-left: 300px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .l-main {

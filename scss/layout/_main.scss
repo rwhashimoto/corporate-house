@@ -1,5 +1,6 @@
 .l-main {
     margin-left: 300px;
+    font-family: $font-family;
     @include media-sp {
         margin-left: 0;
     }
