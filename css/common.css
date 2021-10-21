@@ -365,71 +365,11 @@ a {
   height: auto;
   vertical-align: top;
 }
-.l-header-btn {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .l-header-btn {
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 30px;
-  }
-  .l-header-btn::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: #121212;
-    transition: all ease-in-out 0.5s;
-  }
-  .l-header-btn::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: #121212;
-    transition: all ease-in-out 0.5s;
-  }
-  .l-header-btn .line {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: #121212;
-    transition: all ease-in-out 0.5s;
-  }
-  .active .l-header-btn::before {
-    width: 30px;
-    transform: translateY(10px) rotate(405deg);
-    background-color: #FFF;
-  }
-  .active .l-header-btn::after {
-    width: 30px;
-    transform: translateY(-10px) rotate(-405deg);
-    background-color: #FFF;
-  }
-  .active .l-header-btn .line {
-    background-color: rgba(255, 255, 255, 0);
-  }
-}
-.l-header-navs {
+.l-header-nav {
   background-color: #FFF;
 }
 @media screen and (max-width: 768px) {
-  .l-header-navs {
+  .l-header-nav {
     position: fixed;
     top: 0;
     left: -300px;
@@ -439,7 +379,7 @@ a {
     background-color: #FFF;
     transition: all ease-in-out 0.6s;
   }
-  .active .l-header-navs {
+  .active .l-header-nav {
     left: 0;
   }
 }
@@ -625,9 +565,7 @@ a {
   top: 0;
   z-index: -1;
   width: 100%;
-  /*横幅いっぱいにwidthを指定*/
   height: 0px;
-  /*高さはpaddingで指定するためheightは0に*/
   padding-bottom: 53.5%;
 }
 @media screen and (max-width: 768px) {
@@ -1016,6 +954,67 @@ a {
   height: 0;
   border-bottom: 20px solid #121212;
   border-left: 20px solid transparent;
+}
+
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  .hamburger::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #121212;
+    transition: all ease-in-out 0.5s;
+  }
+  .hamburger::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #121212;
+    transition: all ease-in-out 0.5s;
+  }
+  .hamburger .line {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #121212;
+    transition: all ease-in-out 0.5s;
+  }
+  .active .hamburger::before {
+    width: 30px;
+    transform: translateY(10px) rotate(405deg);
+    background-color: #FFF;
+  }
+  .active .hamburger::after {
+    width: 30px;
+    transform: translateY(-10px) rotate(-405deg);
+    background-color: #FFF;
+  }
+  .active .hamburger .line {
+    background-color: rgba(255, 255, 255, 0);
+  }
 }
 
 .top-btn {

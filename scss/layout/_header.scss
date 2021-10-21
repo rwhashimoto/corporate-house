@@ -29,67 +29,7 @@
             vertical-align: top;
         }
     }
-    &-btn {
-        display: none;
-        @include media-sp {
-            display: block;
-            position: relative;
-            width: 30px;
-            height: 30px;
-            &::before {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 5px;
-                left: 0;
-                width: 30px;
-                height: 2px;
-                border-radius: 2px;
-                background-color: $sub-color;
-                transition: all ease-in-out 0.5s;
-            }
-            &::after {
-                content: '';
-                display: block;
-                position: absolute;
-                bottom: 5px;
-                left: 0;
-                width: 30px;
-                height: 2px;
-                border-radius: 2px;
-                background-color: $sub-color;
-                transition: all ease-in-out 0.5s;
-            }
-            .line {
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-                width: 30px;
-                height: 2px;
-                border-radius: 2px;
-                background-color: $sub-color;
-                transition: all ease-in-out 0.5s;
-            }
-            .active & {
-                &::before {
-                    width: 30px;
-                    transform: translateY(10px) rotate(405deg);
-                    background-color: $main-color;
-                }
-                &::after {
-                    width: 30px;
-                    transform: translateY(-10px) rotate(-405deg);
-                    background-color: $main-color;
-                }
-                .line {
-                    background-color: rgba(255, 255, 255, 0);
-                }
-            }
-        }
-    }
-    &-navs {//.l-header-navs
+    &-nav {//.l-header-nav
         background-color: $main-color;
         @include media-sp {
             position: fixed;
