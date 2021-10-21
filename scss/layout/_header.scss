@@ -75,15 +75,11 @@
             .active & {
                 &::before {
                     width: 30px;
-                    // top: 5px;
-                    // left: 2px;
                     transform: translateY(10px) rotate(405deg);
                     background-color: $main-color;
                 }
                 &::after {
                     width: 30px;
-                    // left: 2px;
-                    // bottom: 5px;
                     transform: translateY(-10px) rotate(-405deg);
                     background-color: $main-color;
                 }
@@ -124,7 +120,6 @@
     }
     &-item {//.l-header-item
         display: inline-block;
-        // margin: 10px 0 0;
         color: $sub-color;
         text-decoration: none;
         @include media-pc {
