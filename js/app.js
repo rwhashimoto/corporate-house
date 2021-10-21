@@ -1,5 +1,5 @@
 $(function(){
-    $('.hamburger').on('click', function() {
+    $('.hamburger-btn').on('click', function() {
       $('body').toggleClass('active');
       return false;
     });

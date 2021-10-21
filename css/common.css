@@ -956,17 +956,17 @@ a {
   border-left: 20px solid transparent;
 }
 
-.hamburger {
+.hamburger-btn {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .hamburger {
+  .hamburger-btn {
     display: block;
     position: relative;
     width: 30px;
     height: 30px;
   }
-  .hamburger::before {
+  .hamburger-btn::before {
     content: "";
     display: block;
     position: absolute;
@@ -978,7 +978,7 @@ a {
     background-color: #121212;
     transition: all ease-in-out 0.5s;
   }
-  .hamburger::after {
+  .hamburger-btn::after {
     content: "";
     display: block;
     position: absolute;
@@ -990,7 +990,7 @@ a {
     background-color: #121212;
     transition: all ease-in-out 0.5s;
   }
-  .hamburger .line {
+  .hamburger-btn .line {
     display: block;
     position: absolute;
     top: 50%;
@@ -1002,17 +1002,17 @@ a {
     background-color: #121212;
     transition: all ease-in-out 0.5s;
   }
-  .active .hamburger::before {
+  .active .hamburger-btn::before {
     width: 30px;
     transform: translateY(10px) rotate(405deg);
     background-color: #FFF;
   }
-  .active .hamburger::after {
+  .active .hamburger-btn::after {
     width: 30px;
     transform: translateY(-10px) rotate(-405deg);
     background-color: #FFF;
   }
-  .active .hamburger .line {
+  .active .hamburger-btn .line {
     background-color: rgba(255, 255, 255, 0);
   }
 }
