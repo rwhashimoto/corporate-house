@@ -17,7 +17,7 @@ $(function(){
   });
 
 $(function () {//page top
-  var pagetop = $('#top-btn');
+  var pagetop = $('.top-btn');
   pagetop.hide();
   $(window).scroll(function () {
     if ($(this).scrollTop() > 500) {
