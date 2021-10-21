@@ -1,9 +1,426 @@
 .l-main {
-    width: 85%;
-    p{
-        background-color: red;
-        @include media-sp{
-            background-color: green;
+    margin-left: 300px;
+    font-family: $font-family;
+    @include media-sp {
+        margin-left: 0;
+    }
+    .section-wrap {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section-ttl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: $sub-color;
+        @include media-sp {
+            font-size: 2.0rem;
         }
+        &:before {
+            content: "";
+            height: 1px;
+            background: $sub-color;
+            width: 240px;
+            @include media-sp {
+                width: 60px;
+            }
+        }
+        &::after {
+            content: "";
+            height: 1px;
+            background: $sub-color;
+            width: 240px;
+            @include media-sp {
+                width: 60px;
+            }
+        }
+    }
+    .section-lead {
+        margin: 60px 0 0;
+        color: $sub-color;
+        font-size: 1.6rem;
+        @include media-sp {
+            margin: 30px 0 0;
+        }
+    }
+    .bg-gradation {
+        background: linear-gradient(to top, rgba(5, 0, 0, 0.8), rgba(255, 255, 255, 0));
+    }
+    .bg-normal {
+        background-color: $main-color;
+    }
+    &-mv {//.l-main-mv
+        position: sticky;
+        top: 0;
+        // width: 100%;
+        // height: 640px;
+        z-index: -1;
+        width:100%;              /*横幅いっぱいにwidthを指定*/
+        // padding-bottom: 56.25%;  /*高さをpaddingで指定(16:9)*/
+        height:0px;              /*高さはpaddingで指定するためheightは0に*/
+        padding-bottom: 53.5%;
+        @include media-sp {
+            padding-bottom: 160%
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-project {//.l-main-project
+        padding: 80px 20px 0;
+        @include media-sp {
+            padding: 57px 20px 0;
+        }
+        .section-ttl {
+            color: $main-color;
+            &::after {
+                background: $main-color;
+            }
+            &:before {
+                background: $main-color;
+            }
+        }
+        .contents {
+            margin: 63px 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 50px;
+            @include media-sp {
+                margin: 33px 0 0;
+                gap: 30px;
+            }
+        }
+        .content {
+            position: relative;
+            list-style: none;
+            width: 46.5%;
+            padding-top: 29.5%;
+            border: 1px solid $main-color;
+            @include media-sp {
+                width: 100%;
+                padding-top: 63%;
+            }
+            &::before {
+                content: "";
+                box-shadow: 0 -18px 15px 0px rgb(46, 46, 46, 0.8) inset;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+            &:nth-of-type(1) {
+                &::after {
+                    content: "PROJECT_01";
+                    position: absolute;
+                    bottom: 4px;
+                    left: 6px;
+                    color: $main-color;
+                    font-size: 1.2rem;
+                    font-family: "メイリオ" ;
+                    z-index: 2;
+                }
+            }
+            &:nth-of-type(2) {
+                &::after {
+                    content: "PROJECT_02";
+                    position: absolute;
+                    bottom: 4px;
+                    left: 6px;
+                    color: $main-color;
+                    font-size: 1.2rem;
+                    font-family: "メイリオ" ;
+                    z-index: 2;
+                }
+            }
+            &:nth-of-type(3) {
+                &::after {
+                    content: "PROJECT_03";
+                    position: absolute;
+                    bottom: 4px;
+                    left: 6px;
+                    color: $main-color;
+                    font-size: 1.2rem;
+                    font-family: "メイリオ" ;
+                    z-index: 2;
+                }
+            }
+            &:nth-of-type(4) {
+                &::after {
+                    content: "PROJECT_04";
+                    position: absolute;
+                    bottom: 4px;
+                    left: 6px;
+                    color: $main-color;
+                    font-size: 1.2rem;
+                    font-family: "メイリオ" ;
+                    z-index: 2;
+                }
+            }
+            img {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &-feature {//.l-main-feature
+        padding: 160px 20px 145px;
+        @include media-sp {
+            padding: 117px 20px 107px;
+        }
+        .section-ttl {
+            color: $main-color;
+            &::after {
+                background: $main-color;
+            }
+            &:before {
+                background: $main-color;
+            }
+        }
+        .contents {
+            display: flex;
+            justify-content: space-between;
+            margin: 62px 0 0;
+            @include media-sp {
+                margin: 33px 0 0;
+            }
+            .content {
+                list-style: none;
+                @include media-sp {
+                    width: 100px;
+                }
+                .circle {
+                    display: block;
+                    width: 258px;
+                    height: 258px;
+                    line-height: 258px;
+                    text-align: center;
+                    border: 1px solid $main-color;
+                    border-radius: 50%;
+                    color: $main-color;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    position: relative;
+                    overflow: hidden;
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        transition: all ease-in-out 0.6s;
+                        background-color: #fff;
+                        opacity: 0.3;
+                    }
+                    &:hover {
+                        &::after {
+                            left: 0;
+                        }
+                    }
+                    @include media-sp {
+                        width: 100px;
+                        height: 100px;
+                        line-height: 100px;
+                    }
+                }
+                .text {
+                    margin: 15px;
+                    color: $main-color;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    @include media-sp {
+                        margin: 15px 0;
+                    }
+                    .ttl {
+                        display: block;
+                        margin-bottom: 7px;
+                        color: $main-color;
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+    }
+    &-flow {//.l-main-flow
+        padding: 120px 20px 0;
+        @include media-sp {
+            padding: 58px 20px 0;
+        }
+        .content {
+            display: flex;
+            gap: 4.5%;
+            margin: 62px 0 0;
+            @include media-sp {
+                flex-direction: column;
+                margin: 33px 0 0;
+            }
+        }
+        .figure-items {
+            list-style: none;
+            // @include media-sp {
+            //     margin: 0 auto;
+            // }
+            .figure-item {
+                width: 200px;
+                height: 80px;
+                margin: 0 0 60px;
+                background-color: $figure-color;
+                position: relative;
+                text-align: center;
+                font-size: 1.4rem;
+                color: $main-color;
+                line-height: 80px;
+                @include media-sp {
+                    width: 88%;
+                    margin: 0 auto 60px;
+                }
+                &::before {
+                    content:"";
+                    width: 200px;
+                    height: 30px;
+                    clip-path: polygon(0 0, 100% 0%, 50% 100%);
+                    background-color: $figure-color;
+                    position: absolute;
+                    bottom: -29.5px;
+                    right: 0;
+                    z-index: 1;
+                    @include media-sp {
+                        width: 100%;
+                    }
+                }
+                &::after {
+                    content: "";
+                    width: 50px;
+                    height: 40px;
+                    background-color: $accent-color;
+                    position: absolute;
+                    bottom: -60px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    @include media-sp {
+                        height: 35px;
+                    }
+                }
+                &:last-of-type {
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+        .description-items {
+            .description-item {
+                list-style: none;
+                margin: 46px 0 0;
+                @include media-sp {
+                    margin: 45px 0 0;
+                }
+                &:first-child {
+                    margin: 0;
+                    @include media-sp {
+                        margin: 20px 0 0;
+                    }
+                }
+                .ttl {
+                    font-size: 2.0rem;
+                    display: flex;
+                    // align-items: center;
+                    .num {
+                        display: block;
+                        margin: 3px 8px 0px 3px;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        background-color: $figure-color;
+                        color: $main-color;
+                        font-size: 1.6rem;
+                        border-radius: 50%;
+                        @include media-sp {
+                            margin: 3px 8px 0px 0px;
+                        }
+                    }
+                }
+                .text {
+                    margin: 0 0 0 45px;
+                    padding: 6px 0 0;
+                    font-size: 1.6rem;
+                    border-top: 1px solid $sub-color;
+                    @include media-sp {
+                        padding: 6px 12px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    &-contact {//.l-main-contact
+        padding: 114px 20px 0;
+        @include media-sp {
+            padding: 120px 20px 0;
+        }
+        .contents {
+            display: flex;
+            justify-content: space-between;
+            margin: 65px 0 0;
+            list-style: none;
+            width: 100%;
+            @include media-sp {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                margin: 35px 0 0;
+            }
+        }
+        .content {
+            display: block;
+            width: 30%;
+            text-align: center;
+            position: relative;
+            @include media-sp {
+                width: 60%;
+            }
+            .content-inner {
+                display: block;
+                padding: 50px 0;
+                text-decoration: none;
+                color: $sub-color;
+                outline: 1px solid $sub-color;
+                @include media-pc {
+                    transition: all ease-in-out 0.1s;
+                    &:hover {
+                        outline: 4px solid $sub-color;
+                    }
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 3px;
+                right: 4px;
+                width: 0;
+                height: 0;
+                border-bottom: 20px solid $sub-color;
+                border-left: 20px solid transparent;
+            }
+        }
+
     }
 }

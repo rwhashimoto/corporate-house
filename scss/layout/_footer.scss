@@ -1,3 +1,53 @@
 .l-footer {
-    width: 100%;
+    margin: 160px 0 0 300px;
+    background-color: $sub-color;
+    font-family: $font-family;
+    @include media-sp {
+        margin: 124px 0 0 0;
+    }
+    &-items {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 50px 0 0;
+        @include media-sp {
+            flex-wrap: wrap;
+            padding: 36px 0 0;
+        }
+    }
+    &-item {
+        display: block;
+        color: $main-color;
+        font-size: 1.4rem;
+        text-decoration: none;
+        border-right: 1px solid $main-color;
+        &:last-of-type {
+            border: none;
+        }
+        @include media-sp {
+            margin-top: 10px;
+        }
+        a {
+            padding: 0 20px;
+            color: $main-color;
+            text-decoration: none;
+            @include media-pc {
+                transition: all ease-in-out 0.3s;
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+    &-copyright {
+        display: block;
+        padding: 60px 0 23px;
+        text-align: center;
+        color: $main-color;
+        font-size: 1.2rem;
+        font-family: "メイリオ";
+        @include media-sp {
+            padding: 75px 0 20px;
+        }
+    }
 }
