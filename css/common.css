@@ -992,12 +992,12 @@ progress {
   }
   .is-active .hamburger-btn::before {
     width: 30px;
-    transform: translateY(10px) rotate(405deg);
+    transform: translateY(9px) rotate(405deg);
     background-color: #FFF;
   }
   .is-active .hamburger-btn::after {
     width: 30px;
-    transform: translateY(-10px) rotate(-405deg);
+    transform: translateY(-9px) rotate(-405deg);
     background-color: #FFF;
   }
   .is-active .hamburger-btn .line {
