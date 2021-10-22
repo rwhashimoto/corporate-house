@@ -86,10 +86,10 @@
             }
         }
         .contents {
-            margin: 63px 0 0;
+            margin: 63px auto 0;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             gap: 50px;
             list-style: none;
             @include media-sp {
