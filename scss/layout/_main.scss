@@ -9,20 +9,24 @@
         width: 100%;
         margin: 0 auto;
     }
-    .section-ttl {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .section-title {
+        position: relative;
         font-size: 2.8rem;
         font-weight: bold;
         color: $sub-color;
+        text-align: center;
         @include media-sp {
             font-size: 2.0rem;
         }
         &:before {
             content: "";
-            height: 1px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
             background: $sub-color;
+            height: 1px;
             width: 240px;
             @include media-sp {
                 width: 60px;
@@ -30,8 +34,13 @@
         }
         &::after {
             content: "";
-            height: 1px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
             background: $sub-color;
+            height: 1px;
             width: 240px;
             @include media-sp {
                 width: 60px;
@@ -76,7 +85,7 @@
         @include media-sp {
             padding: 57px 20px 0;
         }
-        .section-ttl {
+        .section-title {
             color: $main-color;
             &::after {
                 background: $main-color;
@@ -195,7 +204,7 @@
         @include media-sp {
             padding: 117px 20px 107px;
         }
-        .section-ttl {
+        .section-title {
             color: $main-color;
             &::after {
                 background: $main-color;
