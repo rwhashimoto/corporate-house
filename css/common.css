@@ -793,7 +793,7 @@ progress {
     margin: 15px 0;
   }
 }
-.l-main-feature .contents .content .text .ttl {
+.l-main-feature .contents .content .text .title {
   display: block;
   margin-bottom: 7px;
   color: #FFF;
@@ -892,11 +892,11 @@ progress {
     margin: 20px 0 0;
   }
 }
-.l-main-flow .description-items .description-item .ttl {
+.l-main-flow .description-items .description-item .title {
   font-size: 2rem;
   display: flex;
 }
-.l-main-flow .description-items .description-item .ttl .num {
+.l-main-flow .description-items .description-item .title .num {
   display: block;
   margin: 3px 8px 0px 3px;
   width: 35px;
@@ -909,7 +909,7 @@ progress {
   border-radius: 50%;
 }
 @media screen and (max-width: 960px) {
-  .l-main-flow .description-items .description-item .ttl .num {
+  .l-main-flow .description-items .description-item .title .num {
     margin: 3px 8px 0px 0px;
   }
 }
