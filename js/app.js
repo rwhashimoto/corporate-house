@@ -1,4 +1,4 @@
-$(function(){
+$(function() {
   //hamburger menu
   $('.hamburger-btn').on('click', function() {
     $('body').toggleClass('is-active');
@@ -18,14 +18,14 @@ $(function(){
   //page top
   var pagetop = $('.top-btn');
   pagetop.hide();
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     if ($(this).scrollTop() > 500) {
       pagetop.fadeIn();
     } else {
       pagetop.fadeOut();
     }
   });
-  pagetop.click(function () {
+  pagetop.click(function() {
     $('body, html').animate({
         scrollTop: 0
     }, 500);
