@@ -41,7 +41,7 @@
             background-color: $sub-color;
             transition: all ease-in-out 0.5s;
         }
-        .active & {
+        .is-active & {
             &::before {
                 width: 30px;
                 transform: translateY(10px) rotate(405deg);

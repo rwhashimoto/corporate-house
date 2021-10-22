@@ -40,7 +40,7 @@
             padding: 20px;
             background-color: $main-color;
             transition: all ease-in-out 0.6s;
-            .active & {
+            .is-active & {
                 left: 0;
             }
         }
@@ -73,7 +73,7 @@
         display: none;
         @include media-sp {
             transition: all ease-in-out 0.6s;
-            .active & {
+            .is-active & {
                 display: block;
                 position: absolute;
                 top: 0;

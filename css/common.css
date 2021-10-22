@@ -379,7 +379,7 @@ progress {
     background-color: #FFF;
     transition: all ease-in-out 0.6s;
   }
-  .active .l-header-nav {
+  .is-active .l-header-nav {
     left: 0;
   }
 }
@@ -418,7 +418,7 @@ progress {
   .l-header-mask {
     transition: all ease-in-out 0.6s;
   }
-  .active .l-header-mask {
+  .is-active .l-header-mask {
     display: block;
     position: absolute;
     top: 0;
@@ -1002,17 +1002,17 @@ progress {
     background-color: #121212;
     transition: all ease-in-out 0.5s;
   }
-  .active .hamburger-btn::before {
+  .is-active .hamburger-btn::before {
     width: 30px;
     transform: translateY(10px) rotate(405deg);
     background-color: #FFF;
   }
-  .active .hamburger-btn::after {
+  .is-active .hamburger-btn::after {
     width: 30px;
     transform: translateY(-10px) rotate(-405deg);
     background-color: #FFF;
   }
-  .active .hamburger-btn .line {
+  .is-active .hamburger-btn .line {
     background-color: rgba(255, 255, 255, 0);
   }
 }
