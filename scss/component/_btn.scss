@@ -81,4 +81,12 @@
         border-right: 7px solid transparent;
         border-bottom: 7px solid $main-color;
     }
+    @include media-pc {
+        transition: all ease-in-out 0.3s;
+        &:hover {
+            &::after {
+                border-bottom: 7px solid $accent-color;
+            }
+        }
+    }
 }

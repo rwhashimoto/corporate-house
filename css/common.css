@@ -1059,3 +1059,11 @@ progress {
   border-right: 7px solid transparent;
   border-bottom: 7px solid #FFF;
 }
+@media screen and (min-width: 961px) {
+  .top-btn {
+    transition: all ease-in-out 0.3s;
+  }
+  .top-btn:hover::after {
+    border-bottom: 7px solid #FFDD00;
+  }
+}
