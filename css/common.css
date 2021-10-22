@@ -336,7 +336,7 @@ progress {
   padding: 40px 45px;
   font-family: "Noto Sans JP", sans-serif;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-header {
     display: flex;
     flex-wrap: wrap;
@@ -355,7 +355,7 @@ progress {
   display: block;
   width: 200px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-header-logo {
     width: 180px;
   }
@@ -368,7 +368,7 @@ progress {
 .l-header-nav {
   background-color: #FFF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-header-nav {
     position: fixed;
     top: 0;
@@ -393,7 +393,7 @@ progress {
 .l-header-items.sns {
   margin: 80px 0 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-header-items {
     margin: 0;
   }
@@ -403,7 +403,7 @@ progress {
   color: #121212;
   text-decoration: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 961px) {
   .l-header-item {
     transition: all ease-in-out 0.3s;
   }
@@ -414,7 +414,7 @@ progress {
 .l-header-mask {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-header-mask {
     transition: all ease-in-out 0.6s;
   }
@@ -435,7 +435,7 @@ progress {
   background-color: #121212;
   font-family: "Noto Sans JP", sans-serif;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-footer {
     margin: 124px 0 0 0;
   }
@@ -446,7 +446,7 @@ progress {
   justify-content: center;
   padding: 50px 0 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-footer-items {
     flex-wrap: wrap;
     padding: 36px 0 0;
@@ -462,7 +462,7 @@ progress {
 .l-footer-item:last-of-type {
   border: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-footer-item {
     margin-top: 10px;
   }
@@ -472,7 +472,7 @@ progress {
   color: #FFF;
   text-decoration: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 961px) {
   .l-footer-item a {
     transition: all ease-in-out 0.3s;
   }
@@ -488,7 +488,7 @@ progress {
   font-size: 1.2rem;
   font-family: "メイリオ";
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-footer-copyright {
     padding: 75px 0 20px;
   }
@@ -498,7 +498,7 @@ progress {
   margin-left: 300px;
   font-family: "Noto Sans JP", sans-serif;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main {
     margin-left: 0;
   }
@@ -516,7 +516,7 @@ progress {
   font-weight: bold;
   color: #121212;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main .section-ttl {
     font-size: 2rem;
   }
@@ -527,7 +527,7 @@ progress {
   background: #121212;
   width: 240px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main .section-ttl:before {
     width: 60px;
   }
@@ -538,7 +538,7 @@ progress {
   background: #121212;
   width: 240px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main .section-ttl::after {
     width: 60px;
   }
@@ -548,7 +548,7 @@ progress {
   color: #121212;
   font-size: 1.6rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main .section-lead {
     margin: 30px 0 0;
   }
@@ -568,7 +568,7 @@ progress {
   height: 0px;
   padding-bottom: 53.5%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-mv {
     padding-bottom: 160%;
   }
@@ -585,7 +585,7 @@ progress {
 .l-main-project {
   padding: 80px 20px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-project {
     padding: 57px 20px 0;
   }
@@ -607,7 +607,7 @@ progress {
   gap: 50px;
   list-style: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-project .contents {
     margin: 33px 0 0;
     gap: 30px;
@@ -621,7 +621,7 @@ progress {
   display: block;
   text-decoration: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-project .content {
     width: 100%;
     padding-top: 63%;
@@ -686,7 +686,7 @@ progress {
   z-index: 2;
   outline: 1px solid #FFF;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 961px) {
   .l-main-project .content a {
     transition: all ease-in-out 0.1s;
   }
@@ -705,7 +705,7 @@ progress {
 .l-main-feature {
   padding: 160px 20px 145px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-feature {
     padding: 117px 20px 107px;
   }
@@ -724,7 +724,7 @@ progress {
   justify-content: space-between;
   margin: 62px 0 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-feature .contents {
     margin: 33px 0 0;
   }
@@ -732,7 +732,7 @@ progress {
 .l-main-feature .contents .content {
   list-style: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-feature .contents .content {
     width: 100px;
   }
@@ -766,7 +766,7 @@ progress {
 .l-main-feature .contents .content .circle:hover::after {
   left: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-feature .contents .content .circle {
     width: 100px;
     height: 100px;
@@ -779,7 +779,7 @@ progress {
   font-size: 1.4rem;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-feature .contents .content .text {
     margin: 15px 0;
   }
@@ -794,7 +794,7 @@ progress {
 .l-main-flow {
   padding: 120px 20px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-flow {
     padding: 58px 20px 0;
   }
@@ -804,7 +804,7 @@ progress {
   gap: 4.5%;
   margin: 62px 0 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-flow .content {
     flex-direction: column;
     margin: 33px 0 0;
@@ -824,7 +824,7 @@ progress {
   color: #FFF;
   line-height: 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-flow .figure-items .figure-item {
     width: 88%;
     margin: 0 auto 60px;
@@ -842,7 +842,7 @@ progress {
   right: 0;
   z-index: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-flow .figure-items .figure-item::before {
     width: 100%;
   }
@@ -858,7 +858,7 @@ progress {
   right: 0;
   margin: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-flow .figure-items .figure-item::after {
     height: 35px;
   }
@@ -870,7 +870,7 @@ progress {
   list-style: none;
   margin: 46px 0 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-flow .description-items .description-item {
     margin: 45px 0 0;
   }
@@ -878,7 +878,7 @@ progress {
 .l-main-flow .description-items .description-item:first-child {
   margin: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-flow .description-items .description-item:first-child {
     margin: 20px 0 0;
   }
@@ -899,7 +899,7 @@ progress {
   font-size: 1.6rem;
   border-radius: 50%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-flow .description-items .description-item .ttl .num {
     margin: 3px 8px 0px 0px;
   }
@@ -910,7 +910,7 @@ progress {
   font-size: 1.6rem;
   border-top: 1px solid #121212;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-flow .description-items .description-item .text {
     padding: 6px 12px 0 0;
   }
@@ -918,7 +918,7 @@ progress {
 .l-main-contact {
   padding: 114px 20px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-contact {
     padding: 120px 20px 0;
   }
@@ -930,7 +930,7 @@ progress {
   list-style: none;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-contact .contents {
     flex-direction: column;
     align-items: center;
@@ -944,7 +944,7 @@ progress {
   text-align: center;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .l-main-contact .content {
     width: 60%;
   }
@@ -956,7 +956,7 @@ progress {
   color: #121212;
   outline: 1px solid #121212;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 961px) {
   .l-main-contact .content .content-inner {
     transition: all ease-in-out 0.1s;
   }
@@ -978,7 +978,7 @@ progress {
 .hamburger-btn {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .hamburger-btn {
     display: block;
     position: relative;
