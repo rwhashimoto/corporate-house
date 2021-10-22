@@ -182,14 +182,14 @@
             }
             .content {
                 list-style: none;
+                width: 30%;
                 @include media-sp {
                     width: 100px;
                 }
                 .circle {
                     display: block;
-                    width: 258px;
-                    height: 258px;
-                    line-height: 258px;
+                    width: 100%;
+                    padding: calc(50% - 11px) 0;
                     text-align: center;
                     border: 1px solid $main-color;
                     border-radius: 50%;
@@ -214,11 +214,6 @@
                         &::after {
                             left: 0;
                         }
-                    }
-                    @include media-sp {
-                        width: 100px;
-                        height: 100px;
-                        line-height: 100px;
                     }
                 }
                 .text {

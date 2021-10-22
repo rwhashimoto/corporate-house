@@ -707,6 +707,7 @@ progress {
 }
 .l-main-feature .contents .content {
   list-style: none;
+  width: 30%;
 }
 @media screen and (max-width: 960px) {
   .l-main-feature .contents .content {
@@ -715,9 +716,8 @@ progress {
 }
 .l-main-feature .contents .content .circle {
   display: block;
-  width: 258px;
-  height: 258px;
-  line-height: 258px;
+  width: 100%;
+  padding: calc(50% - 11px) 0;
   text-align: center;
   border: 1px solid #FFF;
   border-radius: 50%;
@@ -741,13 +741,6 @@ progress {
 }
 .l-main-feature .contents .content .circle:hover::after {
   left: 0;
-}
-@media screen and (max-width: 960px) {
-  .l-main-feature .contents .content .circle {
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-  }
 }
 .l-main-feature .contents .content .text {
   margin: 15px;
