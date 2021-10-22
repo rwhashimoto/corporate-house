@@ -605,6 +605,7 @@ progress {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
+  list-style: none;
 }
 @media screen and (max-width: 768px) {
   .l-main-project .contents {
@@ -617,7 +618,8 @@ progress {
   list-style: none;
   width: 46.5%;
   padding-top: 29.5%;
-  border: 1px solid #FFF;
+  display: block;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   .l-main-project .content {
@@ -627,7 +629,7 @@ progress {
 }
 .l-main-project .content::before {
   content: "";
-  box-shadow: 0 -18px 15px 0px rgba(46, 46, 46, 0.8) inset;
+  box-shadow: 0 -18px 15px 0px rgba(12, 9, 9, 0.8) inset;
   position: absolute;
   top: 0;
   left: 0;
@@ -674,6 +676,23 @@ progress {
   font-size: 1.2rem;
   font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   z-index: 2;
+}
+.l-main-project .content a {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  outline: 1px solid #FFF;
+}
+@media screen and (min-width: 769px) {
+  .l-main-project .content a {
+    transition: all ease-in-out 0.1s;
+  }
+  .l-main-project .content a:hover {
+    outline: 3px solid #FFF;
+  }
 }
 .l-main-project .content img {
   position: absolute;
