@@ -124,7 +124,7 @@
                     left: 6px;
                     color: $main-color;
                     font-size: 1.2rem;
-                    font-family: "メイリオ" ;
+                    @include font-meiryo;
                     z-index: 2;
                 }
             }
@@ -136,7 +136,7 @@
                     left: 6px;
                     color: $main-color;
                     font-size: 1.2rem;
-                    font-family: "メイリオ" ;
+                    @include font-meiryo;
                     z-index: 2;
                 }
             }
@@ -148,7 +148,7 @@
                     left: 6px;
                     color: $main-color;
                     font-size: 1.2rem;
-                    font-family: "メイリオ" ;
+                    @include font-meiryo;
                     z-index: 2;
                 }
             }
@@ -160,7 +160,7 @@
                     left: 6px;
                     color: $main-color;
                     font-size: 1.2rem;
-                    font-family: "メイリオ" ;
+                    @include font-meiryo;
                     z-index: 2;
                 }
             }

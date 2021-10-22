@@ -1,10 +1,7 @@
 @mixin fz($size: 16) {
     font-size: ($size / 10) + rem;
 }
-html {
-    font-size: 62.5%;
-}
-p,
-a {
-    @include fz(14);
+
+@mixin font-meiryo {
+    font-family: "メイリオ", "Meiryo","ＭＳ ゴシック","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3",sans-serif;
 }

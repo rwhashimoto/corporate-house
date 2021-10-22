@@ -1,4 +1,13 @@
 @charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+p,
+a {
+  font-size: 1.4rem;
+}
+
 /*!
  * ress.css • v4.0.0
  * MIT License
@@ -320,15 +329,6 @@ progress {
   cursor: default;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-p,
-a {
-  font-size: 1.4rem;
-}
-
 .l-header {
   position: fixed;
   width: 300px;
@@ -642,7 +642,7 @@ a {
   left: 6px;
   color: #FFF;
   font-size: 1.2rem;
-  font-family: "メイリオ";
+  font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   z-index: 2;
 }
 .l-main-project .content:nth-of-type(2)::after {
@@ -652,7 +652,7 @@ a {
   left: 6px;
   color: #FFF;
   font-size: 1.2rem;
-  font-family: "メイリオ";
+  font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   z-index: 2;
 }
 .l-main-project .content:nth-of-type(3)::after {
@@ -662,7 +662,7 @@ a {
   left: 6px;
   color: #FFF;
   font-size: 1.2rem;
-  font-family: "メイリオ";
+  font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   z-index: 2;
 }
 .l-main-project .content:nth-of-type(4)::after {
@@ -672,7 +672,7 @@ a {
   left: 6px;
   color: #FFF;
   font-size: 1.2rem;
-  font-family: "メイリオ";
+  font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   z-index: 2;
 }
 .l-main-project .content img {

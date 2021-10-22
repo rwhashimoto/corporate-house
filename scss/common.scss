@@ -1,13 +1,13 @@
+//mixin
+@import './mixin/breakpoint';
+@import './mixin/font';
+
 //setting
 @import './setting/config';
 @import './setting/color';
 
 //foundation
 @import './foundation/reset';
-
-//mixin
-@import './mixin/breakpoint';
-@import './mixin/font';
 
 //layout
 @import './layout/header';
