@@ -3,7 +3,6 @@
     width: 300px;
     height: 100%;
     padding: 40px 45px;
-    font-family: $font-family;
     @include media-sp {
         display: flex;
         flex-wrap: wrap;

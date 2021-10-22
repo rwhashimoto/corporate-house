@@ -1,6 +1,5 @@
 .l-main {
     margin-left: 300px;
-    font-family: $font-family;
     @include media-sp {
         margin-left: 0;
     }
@@ -148,8 +147,8 @@
                 left: 6px;
                 color: $main-color;
                 font-size: 1.2rem;
-                @include font-meiryo;
                 z-index: 4;
+                @include font-meiryo;
             }
             img {
                 position: absolute;

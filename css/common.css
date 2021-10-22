@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html {
   font-size: 62.5%;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 p,
@@ -334,7 +335,6 @@ progress {
   width: 300px;
   height: 100%;
   padding: 40px 45px;
-  font-family: "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 960px) {
   .l-header {
@@ -433,7 +433,6 @@ progress {
 .l-footer {
   margin: 160px 0 0 300px;
   background-color: #121212;
-  font-family: "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 960px) {
   .l-footer {
@@ -496,7 +495,6 @@ progress {
 
 .l-main {
   margin-left: 300px;
-  font-family: "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 960px) {
   .l-main {
@@ -669,8 +667,8 @@ progress {
   left: 6px;
   color: #FFF;
   font-size: 1.2rem;
-  font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   z-index: 4;
+  font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
 }
 .l-main-project .content img {
   position: absolute;
